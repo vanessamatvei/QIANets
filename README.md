@@ -40,7 +40,6 @@ By integrating quantum-inspired pruning, tensor decomposition, and annealing-bas
 - TensorFlow or PyTorch  
 - *(Optional but helpful)* Qiskit or similar quantum computing libraries  
 
----
 
 ## 💻 Installation
 
@@ -52,9 +51,7 @@ cd QIANets
 pip install -r requirements.txt
 
 3. Set up your environment for quantum-inspired computations
-[Optional] Install quantum computing libraries such as Qiskit for deeper exploration of the quantum principles:
-# optional: install Qiskit
-pip install qiskit
+[Optional] Install quantum computing libraries such as Qiskit for deeper exploration of the quantum principles.
 
 ---
 
@@ -116,7 +113,7 @@ git checkout -b feature/your-feature
 git add .
 git commit -m "Add your feature"
 
-3.Push your branch:
+3. Push your branch:
 git push origin feature/your-feature
 
 4. Open a Pull Request for review.
@@ -131,6 +128,7 @@ This project is licensed under the Apache-2.0 License. See the LICENSE file for 
 
 ### 📬 Contact
 For questions or collaboration opportunities, reach out to:
+
 Vanessa Matvei
 Email: vanessamatvei@gmail.com
 
