@@ -158,10 +158,5 @@ Email: vanessamatvei@gmail.com
 ---
 
 If you use QIANets in academic work, please cite the paper: arXiv:2410.10318.
-```
-::contentReference[oaicite:0]{index=0}
-```
-
----
 
 Thank you for your interest in QIANets!
