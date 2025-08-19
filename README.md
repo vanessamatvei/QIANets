@@ -43,82 +43,63 @@ By integrating quantum-inspired pruning, tensor decomposition, and annealing-bas
 ---
 
 ## 💻 Installation
+
+1. Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/vanessamatvei/QIANets
-cd QIANets   
-
-# Install dependencies
+cd QIANets
+Install dependencies
 pip install -r requirements.txt
-
-
-### Installation
-
-1. Clone the repository:
-git clone https://github.com/vanessamatvei/QIANets
-cd QIANets   
-
-2. Install dependencies:
-pip install -r requirements.txt
-
-3. Set up your environment for quantum-inspired computations:
-[Optional] Install quantum computing libraries such as Qiskit for deeper exploration of the quantum principles.
-
-
-### Usage
-1. Train a base CNN model (e.g., ResNet-18) using the provided dataset:
+Set up your environment for quantum-inspired computations
+[Optional] Install quantum computing libraries such as Qiskit for deeper exploration of the quantum principles:
+# optional: install Qiskit
+pip install qiskit
+▶️ Usage
+Train a base CNN model (e.g., ResNet-18) using the provided dataset:
 python train.py --dataset <dataset> --model <model-type>
-
-2. Compress the model using quantum-inspired techniques:
+Compress the model using quantum-inspired techniques:
 python compress.py --model <trained-model-path> --compression-rate <rate>
-
-3. Evaluate the compressed model:
+Evaluate the compressed model:
 python evaluate.py --model <compressed-model-path> --dataset <dataset>
-
-### Example Workflow
-1. Train a model:
+Example Workflow
+Train a model:
 python train.py --dataset cifar10 --model resnet18
-
-2. Compress using a 75% rate:
+Compress using a 75% rate:
 python compress.py --model models/resnet18.h5 --compression-rate 0.75
-
-3. Evaluate:
+Evaluate:
 python evaluate.py --model models/resnet18_compressed.h5 --dataset cifar10
-
-### Quantum-Inspired Techniques
-Quantum-Inspired Pruning: We draw from quantum measurement theory to prune unimportant weights based on probabilistic outcomes, reducing model size while maintaining fidelity.
-Tensor Decomposition: Inspired by the decomposition of quantum states, this technique factorizes large weight matrices into smaller, efficient components.
-Annealing-Based Matrix Factorization: Employs a quantum-inspired annealing process to optimize the factorization, balancing accuracy and compression efficiency.
-
-
-
-### Results 
-In extensive testing on CNN models such as GoogLeNet and DenseNet, QIANets achieved:
-50-70% reduction in inference times
-Compression rates of up to 80% without significant loss in accuracy
-Faster deployment of models on resource-constrained devices (e.g., mobile phones)
-The approach shows significant promise for edge AI applications and large-scale deployment in real-time systems.
-
-### Contributing
+🧩 Quantum-Inspired Techniques
+Quantum-Inspired Pruning
+We draw from quantum measurement theory to prune unimportant weights based on probabilistic outcomes, reducing model size while maintaining fidelity.
+Tensor Decomposition
+Inspired by quantum state decomposition, this technique factorizes large weight matrices into smaller, efficient components for compact representation.
+Annealing-Based Matrix Factorization
+Employs a quantum-inspired annealing process to optimize factorization, balancing accuracy and compression efficiency.
+📊 Results
+In extensive testing on CNN models such as GoogLeNet, ResNet-18, and DenseNet, QIANets achieved:
+50–70% reduction in inference times
+Compression rates up to ~80% without significant accuracy loss
+Faster deployment on resource-constrained devices (e.g., mobile/edge)
+Strong potential for real-time and edge AI applications
+🤝 Contributing
 We welcome contributions! To get involved:
-
 Fork the repo and create a new branch:
-
 git checkout -b feature/your-feature
 Commit your changes:
-
+git add .
 git commit -m "Add your feature"
 Push your branch:
-
 git push origin feature/your-feature
 Open a Pull Request for review.
-
-
-### License 
-This project is licensed under the Apalache-2.0 License. See the LICENSE file for details.
-
-### Contact
+Please follow the repository's CONTRIBUTING.md (if present) and write tests where applicable.
+📜 License
+This project is licensed under the Apache-2.0 License. See the LICENSE file for details.
+📬 Contact
 For questions or collaboration opportunities, reach out to:
+Vanessa Matvei
+Email: vanessamatvei@gmail.com
+
+If you use QIANets in academic work, please cite the paper: arXiv:2410.10318.
 
 Vanessa Matvei
 Email: vanessamatvei@gmail.com
