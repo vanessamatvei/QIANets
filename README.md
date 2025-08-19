@@ -44,11 +44,15 @@ By integrating quantum-inspired pruning, tensor decomposition, and annealing-bas
 ## 💻 Installation
 
 1. Clone the repository
+```
 git clone https://github.com/vanessamatvei/QIANets
 cd QIANets
+```
 
 2. Install dependencies
+```
 pip install -r requirements.txt
+```
 
 3. Set up your environment for quantum-inspired computations
 [Optional] Install quantum computing libraries such as Qiskit for deeper exploration of the quantum principles.
@@ -57,25 +61,37 @@ pip install -r requirements.txt
 
 ### ▶️ Usage
 1. Train a base CNN model (e.g., ResNet-18) using the provided dataset:
+```
 python train.py --dataset <dataset> --model <model-type>
+```
 
 2. Compress the model using quantum-inspired techniques:
+```
 python compress.py --model <trained-model-path> --compression-rate <rate>
+```
 
 3. Evaluate the compressed model:
+```
 python evaluate.py --model <compressed-model-path> --dataset <dataset>
+```
 
 ---
 
 ### Example Workflow
 1. Train a model:
+```
 python train.py --dataset cifar10 --model resnet18
+```
 
 3. Compress using a 75% rate:
+```
 python compress.py --model models/resnet18.h5 --compression-rate 0.75
+```
 
 5. Evaluate:
+```
 python evaluate.py --model models/resnet18_compressed.h5 --dataset cifar10
+```
 
 ---
 
@@ -107,14 +123,20 @@ Tested on GoogLeNet, ResNet-18, and DenseNet, QIANets demonstrated:
 We welcome contributions! To get involved:
 
 1. Fork the repo and create a new branch:
+```
 git checkout -b feature/your-feature
+```
 
 2. Commit your changes:
+```
 git add .
 git commit -m "Add your feature"
+```
 
 3. Push your branch:
+```
 git push origin feature/your-feature
+```
 
 4. Open a Pull Request for review.
 Please follow the repository's CONTRIBUTING.md (if present) and write tests where applicable.
@@ -135,5 +157,4 @@ Email: vanessamatvei@gmail.com
 
 
 If you use QIANets in academic work, please cite the paper: arXiv:2410.10318.
-
 Thank you for your interest in QIANets!
