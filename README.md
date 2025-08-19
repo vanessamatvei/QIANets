@@ -83,12 +83,12 @@ python evaluate.py --model <compressed-model-path> --dataset <dataset>
 python train.py --dataset cifar10 --model resnet18
 ```
 
-3. Compress using a 75% rate:
+2. Compress using a 75% rate:
 ```
 python compress.py --model models/resnet18.h5 --compression-rate 0.75
 ```
 
-5. Evaluate:
+3. Evaluate:
 ```
 python evaluate.py --model models/resnet18_compressed.h5 --dataset cifar10
 ```
@@ -153,8 +153,11 @@ For questions or collaboration opportunities, reach out to:
 
 Vanessa Matvei
 
-Email: vanessamatvei@gmail.com
+Email: vanessamatvei@gmail.com 
 
 
 If you use QIANets in academic work, please cite the paper: arXiv:2410.10318.
+
+---
+
 Thank you for your interest in QIANets!
